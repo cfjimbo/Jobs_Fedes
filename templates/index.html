@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Archivos Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1E88E5;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+        p {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<img class="logo" src="C:/Users/m_aji/OneDrive/Documentos/FEDES_UTPL/Dpto_Contabilidad/Python/contabilidad.png" alt="Contabilidad">-->
+    <h1>Conciliación Bancaria</h1>
+    <form action="http://54.175.135.168:5000/procesar" method="post" enctype="multipart/form-data">
+        <label for="archivo1">Archivo Isyplus:</label>
+        <input type="file" id="archivo1" name="archivo1" accept=".xlsx">
+        <label for="archivo2">Archivo Banca Electronica:</label>
+        <input type="file" id="archivo2" name="archivo2" accept=".xlsx">
+        <button type="submit">Procesar Archivos</button>
+    </form>
+</body>
+</html>
